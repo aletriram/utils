@@ -1,3 +1,5 @@
+import { Md5 } from 'ts-md5/dist/md5';
+
 class Strings {
 
 	toUrl(cadena: string): string {
@@ -7,6 +9,11 @@ class Strings {
 		return cadena.replace(/\s+/g, '-').replace(/[^\u0000-\u007E]/g, function (letra) {
 			return replace[letra] || letra;
 		}).toLowerCase();
+	}
+
+	md5(cadena: string): string | Int32Array {
+
+		return Md5.hashStr(cadena);
 	}
 }
 

@@ -19,4 +19,9 @@ describe('Strings', () => {
 		expect(Strings.toUrl(url)).to.equal('hola-que-tal');
 	});
 
+	it('md5 "Hola   qué tal" convertida ', () => {
+		const msg = 'Hola qué tal';
+		expect(Strings.md5(msg)).to.equal('70842c2feb70eb9f70dda274ebf95ef6');
+	});
+
 });
