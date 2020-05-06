@@ -1,2 +1,3 @@
 import Strings from './Strings';
-export { Strings };
+import Forms from './Forms';
+export { Strings, Forms };

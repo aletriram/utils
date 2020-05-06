@@ -1,4 +1,5 @@
 import Strings from './Strings';
+import Forms from './Forms';
 
 
-export { Strings }
+export { Strings, Forms }
