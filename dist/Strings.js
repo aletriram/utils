@@ -11,5 +11,10 @@ class Strings {
     md5(cadena) {
         return md5_1.Md5.hashStr(cadena);
     }
+    capitalize(s) {
+        if (typeof s !== 'string')
+            return '';
+        return s.charAt(0).toUpperCase() + s.slice(1);
+    }
 }
 exports.default = new Strings();

@@ -24,4 +24,14 @@ describe('Strings', () => {
 		expect(Strings.md5(msg)).to.equal('70842c2feb70eb9f70dda274ebf95ef6');
 	});
 
+	it('capitalize "hey" primera mayus', () => {
+		const msg = 'hey';
+		expect(Strings.capitalize(msg)).to.equal('Hey');
+	});
+
+	it('capitalize "hola qué tal" primera mayus', () => {
+		const msg = 'hola qué tal';
+		expect(Strings.capitalize(msg)).to.equal('Hola qué tal');
+	});
+
 });
