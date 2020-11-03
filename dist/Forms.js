@@ -9,8 +9,8 @@ class Forms {
         if (!form)
             return result;
         this.checkCustomValidation(form);
+        form.classList.add('was-validated');
         if (!form.checkValidity()) {
-            form.classList.add('was-validated');
             return result;
         }
         else {
